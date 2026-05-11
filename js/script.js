@@ -23,4 +23,6 @@ stateList.onchange = function() {
     document.getElementById("info-nickname").textContent = stateData[selected].nickname
     //page changes to have the state image
     document.getElementById("info-pic").src = `img/${stateData[selected].abbr.toLowerCase()}.jpg`
+    //page changes to have state name under state image
+    document.getElementById("info-name").textContent = stateData[selected].name
 }
